@@ -11,8 +11,8 @@ body, html {
 
 .container {
     display: flex;
-    width: 80%;
-    height: 80%;
+    width: 95%;
+    height: 95%;
     border: 1px solid #28ac84;
     border-radius: 10px;
     overflow: hidden;
@@ -21,7 +21,7 @@ body, html {
 
 .sidebar {
     width: 20%;
-    background-color: #007bff;
+    background-color: #268010;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +47,7 @@ body, html {
 }
 
 .main-content {
-    width: 80%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
