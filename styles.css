@@ -56,7 +56,8 @@ body, html {
 .rainbow-text {
     font-size: 1em; /* Increase font size */
     font-weight: bold;
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background: repeating-linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
+    background-size: 100em;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: rainbow-animation 3s infinite;
@@ -64,6 +65,7 @@ body, html {
 }
 
 @keyframes rainbow-animation {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
+    0% { background-position: 0 50%; }
+    100% { background-position: 100em 50%; }
 }
+
