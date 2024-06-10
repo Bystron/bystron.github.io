@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -6,7 +7,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000; /* Optional: add a background color */
+    background-color: #000000;
+    /* Optional: add a background color */
 }
 
 .container {
@@ -16,7 +18,7 @@ body, html {
     border: 1px solid #28ac84;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar {
@@ -31,19 +33,29 @@ body, html {
 .sidebar a {
     display: block;
     margin: 10px 0;
-    text-decoration: none; /* Remove underline */
-    color: rgb(201, 201, 201); /* Link color */
-    font-size: 1.2em; /* Increase font size */
-    padding: 10px 20px; /* Add padding around the links */
-    border: 2px solid transparent; /* Add a border */
-    border-radius: 5px; /* Round the corners */
-    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+    text-decoration: none;
+    /* Remove underline */
+    color: rgb(201, 201, 201);
+    /* Link color */
+    font-size: 1.2em;
+    /* Increase font size */
+    padding: 10px 20px;
+    /* Add padding around the links */
+    border: 2px solid transparent;
+    /* Add a border */
+    border-radius: 5px;
+    /* Round the corners */
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Smooth transition for hover effects */
 }
 
 .sidebar a:hover {
-    background-color: white; /* Change background color on hover */
-    color: #007bff; /* Change text color on hover */
-    border-color: #007bff; /* Change border color on hover */
+    background-color: white;
+    /* Change background color on hover */
+    color: #007bff;
+    /* Change text color on hover */
+    border-color: #007bff;
+    /* Change border color on hover */
 }
 
 .main-content {
@@ -54,18 +66,24 @@ body, html {
 }
 
 .rainbow-text {
-    font-size: 1em; /* Increase font size */
+    font-size: 1em;
+    /* Increase font size */
     font-weight: bold;
     background: repeating-linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
     background-size: 100em;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: rainbow-animation 3s infinite;
-    margin-bottom: 20px; /* Add some space below the rainbow text */
+    margin-bottom: 20px;
+    /* Add some space below the rainbow text */
 }
 
 @keyframes rainbow-animation {
-    0% { background-position: 0 50%; }
-    100% { background-position: 100em 50%; }
-}
+    0% {
+        background-position: 0 50%;
+    }
 
+    100% {
+        background-position: 100em 50%;
+    }
+}
