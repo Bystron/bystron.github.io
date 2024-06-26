@@ -73,6 +73,7 @@ html {
     background-size: 100em;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: border-box;
     animation: rainbow-animation 3s infinite;
     margin-bottom: 20px;
     /* Add some space below the rainbow text */
@@ -87,3 +88,10 @@ html {
         background-position: 100em 50%;
     }
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
