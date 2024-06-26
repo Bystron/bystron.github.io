@@ -72,9 +72,9 @@ html {
     background: repeating-linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
     background-size: 100em;
     -webkit-background-clip: text;
-    background-clip:text;
+    
     -webkit-text-fill-color: transparent;
-   
+    background-clip:text;
     animation: rainbow-animation 3s infinite;
     text-underline-position: unset;
     margin-bottom: 20px;
