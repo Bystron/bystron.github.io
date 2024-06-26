@@ -73,8 +73,9 @@ html {
     background-size: 100em;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: border-box;
+    background-clip: unset;
     animation: rainbow-animation 3s infinite;
+    text-underline-position: unset;
     margin-bottom: 20px;
     /* Add some space below the rainbow text */
 }
