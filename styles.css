@@ -97,3 +97,24 @@ html {
     margin-right: auto;
     width: 50%;
   }
+
+  .pixel{
+    image-rendering: pixelated;
+  }
+
+  .wrapper {
+    width:600px;
+    margin: 0 auto;
+    display: grid;
+}
+.dt {
+    float:left;
+    text-wrap: balance;
+}
+.dd
+{
+    float:right;
+    margin: 10px 20px;
+    padding: 20px;
+    width: 180px;
+}
