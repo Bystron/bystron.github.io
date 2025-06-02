@@ -1,147 +1,148 @@
-body,
-html {
-    width: 100%;
-    max-width: 1200px; 
-    margin: 0;
-    height: 100%;
-    font-family: 'Consolas', 'Courier New', Courier, monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-    /* Optional: add a background color */
-}
-
-.container {
-    display: flex;
-    width: 95%;
-    height: 95%;
-    border: 1px solid #28ac84;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar {
-    width: 20%;
-    background-color: #268010;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.sidebar a {
-    display: block;
-    margin: 10px 0;
-    text-decoration: none;
-    /* Remove underline */
-    color: rgb(201, 201, 201);
-    /* Link color */
-    font-size: 1.2em;
-    /* Increase font size */
-    padding: 10px 20px;
-    /* Add padding around the links */
-    border: 2px solid transparent;
-    /* Add a border */
-    border-radius: 5px;
-    /* Round the corners */
-    transition: background-color 0.3s, border-color 0.3s;
-    /* Smooth transition for hover effects */
-}
-
-.sidebar a:hover {
-    background-color: white;
-    /* Change background color on hover */
-    color: #007bff;
-    /* Change text color on hover */
-    border-color: #007bff;
-    /* Change border color on hover */
-}
-
-.main-content {
-    width: 95%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.rainbow-text {
-    font-size: 1em;
-    /* Increase font size */
-    font-weight: bold;
-    background: repeating-linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
-    background-size: 100em;
-    -webkit-background-clip: text;
-    
-    -webkit-text-fill-color: transparent;
-    
-    animation: rainbow-animation 3s infinite;
-    text-underline-position: unset;
-    margin-bottom: 20px;
-    /* Add some space below the rainbow text */
-}
-
-@keyframes rainbow-animation {
-    0% {
-        background-position: 0 50%;
+    body,
+    html {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto  ;
+        height: 100%;
+        font-family: 'Consolas', 'Courier New', Courier, monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        /* Optional: add a background color */
     }
 
-    100% {
-        background-position: 100em 50%;
+    .container {
+        display: flex;
+        width: 95%;
+        height: 95%;
+        border: 1px solid #28ac84;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-}
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  .pixel{
-    image-rendering: pixelated;
-  }
-
-  .wrapper {
-    width:600px;
-    margin: 0 auto;
-    display: grid;
-}
-
-.mainstyle
-{
-    float:right;
-    margin: 10px 20px;
-    padding: 20px;
-    width: 180px;
-}
-
-/* Mobile styles */
-@media only screen and (max-width: 768px) {
-    body {
-        padding: 10px;
-        margin-top: 250px;
-        margin-right:50px;
-    }
-    
-    /* Adjust font sizes */
-    h1 {
-        font-size: 24px;
-    }
-    
-    p {
-        font-size: 16px;
-    }
-    
-    /* Make images responsive */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    /* Stack elements vertically */
-    .row {
+    .sidebar {
+        <<!-- width: 20%; -->>
+        background-color: #268010;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-}
+
+    .sidebar a {
+        display: block;
+        margin: 10px 0;
+        text-decoration: none;
+        /* Remove underline */
+        color: rgb(201, 201, 201);
+        /* Link color */
+        font-size: 1.2em;
+        /* Increase font size */
+        padding: 10px 20px;
+        /* Add padding around the links */
+        border: 2px solid transparent;
+        /* Add a border */
+        border-radius: 5px;
+        /* Round the corners */
+        transition: background-color 0.3s, border-color 0.3s;
+        /* Smooth transition for hover effects */
+    }
+
+    .sidebar a:hover {
+        background-color: white;
+        /* Change background color on hover */
+        color: #007bff;
+        /* Change text color on hover */
+        border-color: #007bff;
+        /* Change border color on hover */
+    }
+
+    .main-content {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rainbow-text {
+        font-size: 1em;
+        /* Increase font size */
+        font-weight: bold;
+        background: repeating-linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
+        background-size: 100em;
+        -webkit-background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+
+        animation: rainbow-animation 3s infinite;
+        text-underline-position: unset;
+        margin-bottom: 20px;
+        /* Add some space below the rainbow text */
+    }
+
+    @keyframes rainbow-animation {
+        0% {
+            background-position: 0 50%;
+        }
+
+        100% {
+            background-position: 100em 50%;
+        }
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .pixel{
+        image-rendering: pixelated;
+    }
+
+    .wrapper {
+        width:600px;
+        margin: 0 auto;
+        display: grid;
+    }
+
+    .mainstyle
+    {
+        float:right;
+        margin: 10px 20px;
+        padding: 20px;
+        width: 180px;
+    }
+
+    /* Mobile styles */
+    @media only screen and (max-width: 768px) {
+        body {
+            padding: 10px;
+            margin-top: 30vh;
+            margin-right:50px;
+            margin-left:45vh;
+        }
+
+        /* Adjust font sizes */
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        /* Make images responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Stack elements vertically */
+        .row {
+            flex-direction: column;
+        }
+    }
